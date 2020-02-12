@@ -1,0 +1,8 @@
+<p>app-layout works!</p>
+
+<nav>
+    <a [routerLink]="['/directivas']">directivas</a>
+    <a [routerLink]="['/databinding']">databinding</a>
+    <a [routerLink]="['/databinding/kurso']" [queryParams]="{param: '12345s'}">query al param</a>
+</nav>
+<router-outlet></router-outlet>

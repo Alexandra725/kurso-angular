@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 import { FatherComponent } from './father/father.component';
 import { ChildComponent } from './child/child.component';
 import { Routes, RouterModule } from '@angular/router';
+import { ConfirmService } from '../auth/confirm.service';
 
 const ROUTES: Routes = [
-  { path: '', redirectTo: 'databinding', pathMatch: 'full'},
-  { path: 'databinding', component: FatherComponent}
+  // { path: '', redirectTo: 'databinding', pathMatch: 'full'},
+  { path: '', component: FatherComponent},
+  { path: ':id', component: ChildComponent, canDeactivate: [ConfirmService]}
+
 ];
 
 @NgModule({

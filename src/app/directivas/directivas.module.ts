@@ -5,7 +5,7 @@ import { PipesModule } from '../pipes/pipes.module';
 import { Routes, RouterModule } from '@angular/router';
 
 const ROUTES: Routes = [
-  { path: 'directivas', component: ExampleDirectivasComponent }
+  { path: '', component: ExampleDirectivasComponent }
 ];
 
 @NgModule({
