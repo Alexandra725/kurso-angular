@@ -1,0 +1,9 @@
+<p>father works!
+    <button (click)="onClick()">Decirle al hijo</button>
+    <app-child
+    [message]="messageToChild"
+    (reply)="responseFromChild($event)"></app-child>
+</p>
+
+<p>{{messageFromChild}}</p>
+<button (click)="goDirectivas()">Go to directivas</button>
